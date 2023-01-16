@@ -8,6 +8,9 @@
     mc:Ignorable="d">
 
     <Grid>
+        <TextBlock Text="{x:Bind ViewModel.LoginSign, Mode=OneWay}" VerticalAlignment="Bottom"
+                   HorizontalAlignment="Center"
+                   FontFamily="HarmonyOS Sans SC" FontWeight="Bold" FontSize="16" Margin="0,0,0,20" />
         <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Text="请在这里填写你的sessdata~"
                    FontFamily="HarmonyOS Sans SC" FontWeight="Bold" FontSize="18" />
         <StackPanel Margin="0,100,0,0">

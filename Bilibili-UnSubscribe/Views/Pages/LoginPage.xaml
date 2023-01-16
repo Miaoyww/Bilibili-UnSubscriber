@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="Bilibili_UnSubscribe.Views.Pages.LoginPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Loaded="{x:Bind ViewModel.LoginPage_OnLoaded}"
+    mc:Ignorable="d">
+
+    <Grid>
+        <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" Text="请在这里填写你的sessdata~"
+                   FontFamily="HarmonyOS Sans SC" FontWeight="Bold" FontSize="18" />
+        <StackPanel Margin="0,100,0,0">
+            <Grid VerticalAlignment="Top" HorizontalAlignment="Center">
+                <TextBlock Text="bili_jct" FontFamily="HarmonyOS Sans SC" Margin="0,0,0,50"
+                           HorizontalAlignment="Center" />
+                <TextBox Name="biliJctTextBox" Width="200" Height="20" />
+            </Grid>
+            <Grid VerticalAlignment="Top" HorizontalAlignment="Center">
+                <TextBlock Text="sessdata" FontFamily="HarmonyOS Sans SC" Margin="0,0,0,50"
+                           HorizontalAlignment="Center" />
+                <TextBox Name="sessdataTextBox" Width="200" Height="20" />
+            </Grid>
+        </StackPanel>
+
+        <Button Content="登录" Width="100" Height="50" FontFamily="HarmonyOS Sans SC" VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Click="{x:Bind ViewModel.ButtonBase_OnClick}" />
+    </Grid>
+</Page>

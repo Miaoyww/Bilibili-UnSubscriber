@@ -1,0 +1,10 @@
+﻿{
+    "profiles": {
+      "Bilibili-UnSubscribe (Package)": {
+        "commandName": "MsixPackage"
+      },
+      "Bilibili-UnSubscribe (Unpackaged)": {
+        "commandName": "Project"
+      }
+    }
+}
